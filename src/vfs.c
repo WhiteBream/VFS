@@ -5,12 +5,6 @@
 */
 /*! \copyright Copyright (c) 2015-2024, White Bream, https://whitebream.nl
 *************************************************************************//*!
- \file      vfs.c
- \brief     Filesystem wrapper
- \version   1.0.0.0
- \since     June 6, 2015
- \date      April 15, 2024
-
  File system wrapper for a mix of FatFS and LittleFS filesystems.
 ****************************************************************************/
 

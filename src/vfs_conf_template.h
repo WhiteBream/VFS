@@ -3,14 +3,8 @@
      \      / |  _  || |  | |  | __|  | __ <|    /| __| |  _  || |\  /| |
       \_/\_/  |_| |_||_|  |_|  |____| |____/|_|\_\|____||_| |_||_| \/ |_|
 */
-/*! \copyright Copyright (c) 2020, White Bream, https://whitebream.nl
+/*! \copyright Copyright (c) 2020-2024, White Bream, https://whitebream.nl
 *************************************************************************//*!
- \file      vfs_conf.h
- \brief     Configuration of filesystem wrapper
- \version   1.0.0.0
- \since     July 21, 2020
- \date      July 21, 2020
-
  File system wrapper for a mix of FatFS and LittleFS filesystems.
 ****************************************************************************/
 
