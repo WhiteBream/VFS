@@ -3,7 +3,7 @@
      \      / |  _  || |  | |  | __|  | __ <|    /| __| |  _  || |\  /| |
       \_/\_/  |_| |_||_|  |_|  |____| |____/|_|\_\|____||_| |_||_| \/ |_|
 */
-/*! \copyright Copyright (c) 2015-2024, White Bream, https://whitebream.nl
+/*! \copyright Copyright (c) 2015-2025, White Bream, https://whitebream.nl
 *************************************************************************//*!
  File system wrapper for a mix of FatFS and LittleFS filesystems.
 ****************************************************************************/
@@ -2452,6 +2452,11 @@ FILE* fopen(const char* restrict pathname, const char* restrict mode)
     else
     {
         errno = -vfs_file_open(file, pathname, flags);
+        if (errno != 0)
+        {
+        	vfs_free(file);
+        	file = nullptr;
+        }
     }
 
     return((FILE*)file);
